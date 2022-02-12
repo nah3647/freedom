@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Pricing Table with CSS Switch Toggle Example</title>
+    <meta name="author" content="Codeconvey" />
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	
+</head>
+<body>
+		
+<div class="ScriptTop">
+    <div class="rt-container">
+        <div class="col-rt-4" id="float-right">
+
+            <!-- AD HERE -->
+            
+        </div>
+        <div class="col-rt-2">
+            <ul>
+                <li><a href="https://nahomwm.netlify.app">Contact the Developer</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1>Freedom Guest House <br> Bahamas</h1>
+                <p>Luxury is what you can expect at our guest house. </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+<!-- partial:index.partial.html -->
+  <div class="container">
+    <div class="top">
+      <h1>packages & Pricing</h1>
+      <div class="toggle-btn">
+        <span style="margin: 0.8em;">Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="checbox" onclick="check()" ; />
+          <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em;">daily</span></div>
+    </div>
+
+    <div class="package-container">
+      <div class="packages">
+        <h1>Lower class</h1>
+        <h2 class="text1">&dollar;9.99</h2>
+        <h2 class="text2">&dollar;119.99</h2>
+        <ul class="list">
+          <li class="first">Comfortable Rooms</li>
+          <li>One Bedroom</li>
+          <li>Flat screen TV</li>
+          <li>10Mbps</li>
+        </ul>
+        <a href="#" class="button button1">Book Now</a>
+      </div>
+      <div class="packages">
+        <h1>Medium class</h1>
+        <h2 class="text1">&dollar;19.99</h2>
+        <h2 class="text2">&dollar;239.99</h2>
+        <ul class="list">
+          <li class="first"> Daily breakfast +</li>
+          <li>Double Bedroom</li>
+          <li>Laundary service</li>
+          <li>15Mbps Wifi speed</li>
+        </ul>
+        <a href="#" class="button button2">Book Now</a>
+      </div>
+      <div class="packages">
+        <h1>High class</h1>
+        <h2 class="text1">&dollar;29.99</h2>
+        <h2 class="text2">&dollar;359.99</h2>
+        <ul class="list">
+          <li class="first">Daily Lunch or Dinner +</li>
+          <li>Triple and Luxury Beds</li>
+          <li>20% discount on spa</li>
+          <li>20Mbps Wifi speed</li>
+        </ul>
+        <a href="#" class="button button3">Book Now</a>
+      </div>
+    </div>
+<h4> &copy;2021 by Nahom Wmedhen &amp; Associ<wbr>ates, Inc.All Rights Reserved.</h54><br>
+<address>Contact us at <a href="mailto:nahommedehn@gmail.com">nahommedehn@gmail.com</a></address>
+  </div>
+<script>
+function check() {
+  var checkBox = document.getElementById("checbox");
+  var text1 = document.getElementsByClassName("text1");
+  var text2 = document.getElementsByClassName("text2");
+
+  for (var i = 0; i < text1.length; i++) {
+    if (checkBox.checked == true) {
+      text1[i].style.display = "block";
+      text2[i].style.display = "none";
+    } else if (checkBox.checked == false) {
+      text1[i].style.display = "none";
+      text2[i].style.display = "block";
+    }
+  }
+}
+check();                  
+                  
+                  
+</script>
+<!-- partial -->
+    		
+           
+    		</div>
+		</div>
+    </div>
+</section>
+     
+
+   <!-- ANALYTICS -->
+
+	</body>
+</html>
